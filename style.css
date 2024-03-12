@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    animation: fadeInBody 1s ease-in-out;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInNavbar 1s ease-in-out;
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Specific Styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInContainer 1s ease-in-out;
+}
+
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    animation: fadeInButton 1s ease-in-out;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInComment 0.5s ease-in-out;
+}
+
+@keyframes fadeInComment {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional Styles for Hubungi Kami Page */
+.center-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInContact 1s ease-in-out;
+}
+
+@keyframes fadeInContact {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Additional Styles for Article */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: fadeInArticle 1s ease-in-out;
+}
+
+@keyframes fadeInArticle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeInImage 1s ease-in-out;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p.copyright {
+    color: #fff;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .navbar-brand img {
+        max-height: 40px;
+    }
+    
+    .nav-item {
+        padding: 0 10px;
+    }
+    
+    button {
+        padding: 12px 24px;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+}
